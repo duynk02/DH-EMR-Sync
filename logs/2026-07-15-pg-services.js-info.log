@@ -1,0 +1,2332 @@
+2026-07-15 14:59:53 [INFO]: [❔][loadEnv] Đang tìm: D:\DH-Coding\DH-Source\dh-javascript-sources\.env
+2026-07-15 14:59:53 [INFO]: [❔][loadEnv] Đang tìm: D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\.env
+2026-07-15 14:59:53 [INFO]: [✅][loadEnv] Xác nhận: D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\.env
+2026-07-15 14:59:55 [INFO]: ✅ Shutdown service initialized
+2026-07-15 14:59:55 [INFO]: Khởi tạo processUnprocessedNotifications
+2026-07-15 14:59:55 [INFO]: Đang khởi động processUnprocessedNotifications...
+2026-07-15 14:59:55 [INFO]: Đang kiểm tra cấu trúc SQL cần cập nhật: [count: 53] ....
+2026-07-15 14:59:55 [INFO]: Đã cập nhật hết cấu trúc!!!
+2026-07-15 14:59:55 [INFO]: Listening for changes on badt_dhs ...
+2026-07-15 14:59:55 [INFO]: pg-services-emr-dhs, version: undefined
+2026-07-15 14:59:55 [INFO]: 
+=== Thông tin kết nối PostgreSQL: ===
+{
+  "PGDATA_HOST": "192.168.50.79",
+  "PGDATA_DATABASE": "emr_omon",
+  "PGDATA_PORT": "5433"
+}
+======
+
+2026-07-15 14:59:55 [INFO]: ✅ Unlistened all channels
+2026-07-15 14:59:55 [INFO]: ✅ Client released
+2026-07-15 14:59:55 [INFO]: ✅ Pool closed
+2026-07-15 14:59:55 [INFO]: ✅ Cleanup completed
+2026-07-15 14:59:55 [INFO]: 
+=== saveCodeRun ===
+{
+  "updateDB": false,
+  "existsChanged": false
+}
+======
+
+2026-07-15 14:59:55 [INFO]: [❔][loadEnv] Đang tìm: D:\DH-Coding\DH-Source\dh-javascript-sources\.env
+2026-07-15 14:59:55 [INFO]: [❔][loadEnv] Đang tìm: D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\.env
+2026-07-15 14:59:55 [INFO]: [✅][loadEnv] Xác nhận: D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\.env
+2026-07-15 14:59:55 [INFO]: ✅ Shutdown service initialized
+2026-07-15 14:59:55 [INFO]: ===execute_process_notifications===
+2026-07-15 14:59:55 [INFO]: ===RETRY_INTERVAL:300000===
+2026-07-15 14:59:55 [INFO]: Checking for unprocessed notifications...[MAX_RETRY_COUNT:5]
+2026-07-15 14:59:55 [INFO]: 
+=== processUnprocessedNotifications ===
+{
+  "rows.length": 200
+}
+======
+
+2026-07-15 14:59:56 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-21059c4962b388ef4274458a4219c7d2-c1f12089beabe645-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006243",
+    "mabn": "2024036767",
+    "makb": "2505020793",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250524.090628",
+    "channel": "current.chidinhcls",
+    "notification_id": 473500
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006243\",\"mabn\":\"2024036767\",\"makb\":\"2505020793\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250524.090628\",\"channel\":\"current.chidinhcls\",\"notification_id\":473500}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:57 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-f0bfe8365f74b0a4392c115555a44998-44b1c18987c0967a-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006241",
+    "mabn": "2022028787",
+    "makb": "2505020788",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250524.084028",
+    "channel": "current.chidinhcls",
+    "notification_id": 473501
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006241\",\"mabn\":\"2022028787\",\"makb\":\"2505020788\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250524.084028\",\"channel\":\"current.chidinhcls\",\"notification_id\":473501}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:57 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-6aff6a78460f95b463d6e6f8ae33862f-8ab9636dc833f360-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006240",
+    "mabn": "2023025728",
+    "makb": "2505020784",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250524.083128",
+    "channel": "current.chidinhcls",
+    "notification_id": 473502
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006240\",\"mabn\":\"2023025728\",\"makb\":\"2505020784\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250524.083128\",\"channel\":\"current.chidinhcls\",\"notification_id\":473502}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:57 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-18fe0cc4ad6d0d44a6bec3063bffd10c-7eb35ab6c35c7af4-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006285",
+    "mabn": "2024003137",
+    "makb": "2505020904",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "997.20250526.065830",
+    "channel": "current.chidinhcls",
+    "notification_id": 473503
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006285\",\"mabn\":\"2024003137\",\"makb\":\"2505020904\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"997.20250526.065830\",\"channel\":\"current.chidinhcls\",\"notification_id\":473503}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:58 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-ceb12ecfbbd866bbe90f625b3c1bfd2a-171592eb40f7c2cc-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006430",
+    "mabn": "2025018013",
+    "makb": "2505024766",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "S2.20250528.181013",
+    "channel": "current.chidinhcls",
+    "notification_id": 473504
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006430\",\"mabn\":\"2025018013\",\"makb\":\"2505024766\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"S2.20250528.181013\",\"channel\":\"current.chidinhcls\",\"notification_id\":473504}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:58 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-3b416085424b43e0c855fdcd7120deb3-5fa951fc58e7587a-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006280",
+    "mabn": "2022036255",
+    "makb": "2505020898",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250526.022438",
+    "channel": "current.chidinhcls",
+    "notification_id": 473505
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006280\",\"mabn\":\"2022036255\",\"makb\":\"2505020898\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250526.022438\",\"channel\":\"current.chidinhcls\",\"notification_id\":473505}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:58 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-6db2f1b0a8220c3d7062198bfe3887ec-08314da8495ae053-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006278",
+    "mabn": "2025004139",
+    "makb": "2505020875",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "997.20250526.011045",
+    "channel": "current.chidinhcls",
+    "notification_id": 473506
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006278\",\"mabn\":\"2025004139\",\"makb\":\"2505020875\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"997.20250526.011045\",\"channel\":\"current.chidinhcls\",\"notification_id\":473506}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:59 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-fee132d41b39a3bbb47f31a3a326a2cc-a1cdc6198269a7ab-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006273",
+    "mabn": "2025017517",
+    "makb": "2505020884",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "997.20250526.010135",
+    "channel": "current.chidinhcls",
+    "notification_id": 473507
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006273\",\"mabn\":\"2025017517\",\"makb\":\"2505020884\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"997.20250526.010135\",\"channel\":\"current.chidinhcls\",\"notification_id\":473507}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:59 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-5a9b4fe46f8c734c93577c98c14f2073-eed35daaa9d9fb76-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006389",
+    "mabn": "2018013499",
+    "makb": "2505023631",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "",
+    "channel": "current.chidinhcls",
+    "notification_id": 473508
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006389\",\"mabn\":\"2018013499\",\"makb\":\"2505023631\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"\",\"channel\":\"current.chidinhcls\",\"notification_id\":473508}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:59 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-fb1221b04b15074fec9eb522abcc6ffd-eca516184b2990f1-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006277",
+    "mabn": "2020009940",
+    "makb": "2505020882",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "997.20250525.124457",
+    "channel": "current.chidinhcls",
+    "notification_id": 473509
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006277\",\"mabn\":\"2020009940\",\"makb\":\"2505020882\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"997.20250525.124457\",\"channel\":\"current.chidinhcls\",\"notification_id\":473509}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 14:59:59 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-595234ba2b6ed43ebdfe1fbe33918a10-07056ea0888b2f5c-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006279",
+    "mabn": "2022042569",
+    "makb": "2505020881",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250526.011619",
+    "channel": "current.chidinhcls",
+    "notification_id": 473510
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006279\",\"mabn\":\"2022042569\",\"makb\":\"2505020881\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250526.011619\",\"channel\":\"current.chidinhcls\",\"notification_id\":473510}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:00 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-5ecb372922bfe76896521c123175d44d-2f850e70eb6d26c5-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006271",
+    "mabn": "2018071788",
+    "makb": "2505020877",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250525.124610",
+    "channel": "current.chidinhcls",
+    "notification_id": 473511
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006271\",\"mabn\":\"2018071788\",\"makb\":\"2505020877\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250525.124610\",\"channel\":\"current.chidinhcls\",\"notification_id\":473511}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:00 [INFO]: Khởi động processUnprocessedNotifications sau mỗi 3 phút...
+2026-07-15 15:00:00 [INFO]: processUnprocessedNotifications đã đang chạy {30296}
+2026-07-15 15:00:00 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-9ac89c0e384fc5439eaee55a8d0e0400-e127c8eee8ee1d02-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006272",
+    "mabn": "2018028745",
+    "makb": "2505020878",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250526.011016",
+    "channel": "current.chidinhcls",
+    "notification_id": 473512
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006272\",\"mabn\":\"2018028745\",\"makb\":\"2505020878\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250526.011016\",\"channel\":\"current.chidinhcls\",\"notification_id\":473512}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:00 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-aa41150854c74cf5e69aef48836b2425-8fb1d0cfe988d826-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006270",
+    "mabn": "2025006018",
+    "makb": "2505020874",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250525.130934",
+    "channel": "current.chidinhcls",
+    "notification_id": 473513
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006270\",\"mabn\":\"2025006018\",\"makb\":\"2505020874\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250525.130934\",\"channel\":\"current.chidinhcls\",\"notification_id\":473513}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:01 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-0596cb484bb0872e0e0db8b2f69b206d-63d54791cf16d754-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006269",
+    "mabn": "2025017512",
+    "makb": "2505020871",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250525.121041",
+    "channel": "current.chidinhcls",
+    "notification_id": 473514
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006269\",\"mabn\":\"2025017512\",\"makb\":\"2505020871\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250525.121041\",\"channel\":\"current.chidinhcls\",\"notification_id\":473514}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:01 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-c6993fef9a633420c1f26199c78579bf-3c655c11ffe728e4-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006265",
+    "mabn": "2018054204",
+    "makb": "2505020862",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250525.091741",
+    "channel": "current.chidinhcls",
+    "notification_id": 473515
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006265\",\"mabn\":\"2018054204\",\"makb\":\"2505020862\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250525.091741\",\"channel\":\"current.chidinhcls\",\"notification_id\":473515}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:02 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-fa3a59d198af4011299d0b6d7de2f4e9-83e19b506b2c3ce6-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006260",
+    "mabn": "2025017499",
+    "makb": "2505020849",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250525.074622",
+    "channel": "current.chidinhcls",
+    "notification_id": 473516
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006260\",\"mabn\":\"2025017499\",\"makb\":\"2505020849\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250525.074622\",\"channel\":\"current.chidinhcls\",\"notification_id\":473516}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:02 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-67d2657af04d99e060b0ee9265fe25c9-a041e3d99b16c4d6-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006360",
+    "mabn": "2025015724",
+    "makb": "2505022507",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "",
+    "channel": "current.chidinhcls",
+    "notification_id": 473517
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006360\",\"mabn\":\"2025015724\",\"makb\":\"2505022507\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"\",\"channel\":\"current.chidinhcls\",\"notification_id\":473517}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:02 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-71db1acfdee6b2d2a207aa9f6064a6fb-1d91f73a5a032ce6-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006325",
+    "mabn": "2024008493",
+    "makb": "2505021835",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "",
+    "channel": "current.chidinhcls",
+    "notification_id": 473518
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006325\",\"mabn\":\"2024008493\",\"makb\":\"2505021835\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"\",\"channel\":\"current.chidinhcls\",\"notification_id\":473518}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:02 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-56524e9b38f1adbef771eca608e4ea5f-54bbb1aac185f1ed-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006321",
+    "mabn": "2018034823",
+    "makb": "2505021675",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "",
+    "channel": "current.chidinhcls",
+    "notification_id": 473519
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006321\",\"mabn\":\"2018034823\",\"makb\":\"2505021675\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"\",\"channel\":\"current.chidinhcls\",\"notification_id\":473519}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:02 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-40c093120bccbc1eb6dce7e90abd093a-5ea4465fa0f3b7f6-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006288",
+    "mabn": "2019021212",
+    "makb": "2505021154",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "",
+    "channel": "current.chidinhcls",
+    "notification_id": 473520
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006288\",\"mabn\":\"2019021212\",\"makb\":\"2505021154\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"\",\"channel\":\"current.chidinhcls\",\"notification_id\":473520}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:02 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-0ebeb70169880683756da0a3da603161-ee56ea805442aa67-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006239",
+    "mabn": "2019033698",
+    "makb": "2505020776",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "",
+    "channel": "current.chidinhcls",
+    "notification_id": 473521
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006239\",\"mabn\":\"2019033698\",\"makb\":\"2505020776\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"\",\"channel\":\"current.chidinhcls\",\"notification_id\":473521}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:02 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-16d03f02249aa6ead3e2c2035dc1a3d9-8548d1d572ab6d8f-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006214",
+    "mabn": "2019023306",
+    "makb": "2505020225",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "",
+    "channel": "current.chidinhcls",
+    "notification_id": 473522
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006214\",\"mabn\":\"2019023306\",\"makb\":\"2505020225\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"\",\"channel\":\"current.chidinhcls\",\"notification_id\":473522}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:02 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-74cc0621ee2b90eddc01249b253cacc6-1ac1438808a44d87-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006437",
+    "mabn": "2020049307",
+    "makb": "2505024779",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250528.232512",
+    "channel": "current.chidinhcls",
+    "notification_id": 473523
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006437\",\"mabn\":\"2020049307\",\"makb\":\"2505024779\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250528.232512\",\"channel\":\"current.chidinhcls\",\"notification_id\":473523}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:03 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-bde5a2caaf93e6944f7bc22b0338bcd0-173fb35019774518-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006431",
+    "mabn": "2017078963",
+    "makb": "2505024768",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250528.184835",
+    "channel": "current.chidinhcls",
+    "notification_id": 473524
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006431\",\"mabn\":\"2017078963\",\"makb\":\"2505024768\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250528.184835\",\"channel\":\"current.chidinhcls\",\"notification_id\":473524}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:03 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-73005d42d46226b8606a581d6d0677f5-ed9d35d6420cd3f4-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006419",
+    "mabn": "2023024653",
+    "makb": "2505024315",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250528.121226",
+    "channel": "current.chidinhcls",
+    "notification_id": 473525
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006419\",\"mabn\":\"2023024653\",\"makb\":\"2505024315\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250528.121226\",\"channel\":\"current.chidinhcls\",\"notification_id\":473525}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:03 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-79b073d8574cb590a9a61dd74dc15b55-6569e122d792fd1f-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006417",
+    "mabn": "2018029363",
+    "makb": "2505024313",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250528.115711",
+    "channel": "current.chidinhcls",
+    "notification_id": 473526
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006417\",\"mabn\":\"2018029363\",\"makb\":\"2505024313\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250528.115711\",\"channel\":\"current.chidinhcls\",\"notification_id\":473526}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:04 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-d204c8cb726da3a1de25901e3dc7eac1-afcd43d62784c73c-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006406",
+    "mabn": "2025008527",
+    "makb": "2505023906",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250528.084608",
+    "channel": "current.chidinhcls",
+    "notification_id": 473527
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006406\",\"mabn\":\"2025008527\",\"makb\":\"2505023906\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250528.084608\",\"channel\":\"current.chidinhcls\",\"notification_id\":473527}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:04 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-ae9128a352f66153c1b10688d2367c53-0c82a4721de9aae4-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006404",
+    "mabn": "2023009169",
+    "makb": "2505023903",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250528.083017",
+    "channel": "current.chidinhcls",
+    "notification_id": 473528
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006404\",\"mabn\":\"2023009169\",\"makb\":\"2505023903\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250528.083017\",\"channel\":\"current.chidinhcls\",\"notification_id\":473528}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:00:04 [INFO]: {
+  "apiResult": {
+    "errors": {
+      "request": [
+        "The request field is required."
+      ],
+      "ParaClinRequests[0].OrderNo": [
+        "Error converting value {null} to type 'System.Int32'. Path 'ParaClinRequests[0].OrderNo', line 1, position 255."
+      ],
+      "ParaClinRequests[0].ParaClinQty": [
+        "Error converting value {null} to type 'System.Double'. Path 'ParaClinRequests[0].ParaClinQty', line 1, position 391."
+      ]
+    },
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-7fd0d505f35b9bd3e3fe3c193fefdca1-2e7efa5d9efb79d4-01"
+  },
+  "data": {
+    "TPCode": null,
+    "pathApi": null,
+    "RoomCode": null,
+    "PatientCode": null,
+    "EmployeeCode": null,
+    "AdmissionCode": null,
+    "DiagnosisDesc": "",
+    "DepartmentCode": null,
+    "MedicalRecordNo": null,
+    "ParaClinReqCode": null,
+    "ParaClinRequests": [
+      {
+        "UOMID": null,
+        "ToDate": null,
+        "OrderNo": null,
+        "UOMCode": null,
+        "FromDate": null,
+        "MedSerID": null,
+        "ToDateVN": null,
+        "FromDateVN": null,
+        "MedSerCode": null,
+        "MedSerName": null,
+        "ParaClinQty": null,
+        "PCReqDtlNotes": "",
+        "PatientObject": 1,
+        "PCReqDltVoucherNo": ""
+      }
+    ]
+  },
+  "pathApi": "server/his-server/api/Connect/CUTPParaClinRequest",
+  "payload": {
+    "bant": "0",
+    "maba": "2025006309",
+    "mabn": "2019007139",
+    "makb": "2505021664",
+    "macls": "MC14TT3757",
+    "noitru": "1",
+    "senddata": "[Circular]",
+    "operation": "DELETE",
+    "iddienbien": "992.20250528.072814",
+    "channel": "current.chidinhcls",
+    "notification_id": 473529
+  },
+  "msg": {
+    "payload": "{\"bant\":\"0\",\"maba\":\"2025006309\",\"mabn\":\"2019007139\",\"makb\":\"2505021664\",\"macls\":\"MC14TT3757\",\"noitru\":\"1\",\"senddata\":{\"TPCode\":null,\"pathApi\":null,\"RoomCode\":null,\"PatientCode\":null,\"EmployeeCode\":null,\"AdmissionCode\":null,\"DiagnosisDesc\":\"\",\"DepartmentCode\":null,\"MedicalRecordNo\":null,\"ParaClinReqCode\":null,\"ParaClinRequests\":[{\"UOMID\":null,\"ToDate\":null,\"OrderNo\":null,\"UOMCode\":null,\"FromDate\":null,\"MedSerID\":null,\"ToDateVN\":null,\"FromDateVN\":null,\"MedSerCode\":null,\"MedSerName\":null,\"ParaClinQty\":null,\"PCReqDtlNotes\":\"\",\"PatientObject\":1,\"PCReqDltVoucherNo\":\"\"}]},\"operation\":\"DELETE\",\"iddienbien\":\"992.20250528.072814\",\"channel\":\"current.chidinhcls\",\"notification_id\":473529}"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:01:07 [INFO]: client.on.notification: 474588; current.qtdieutri
+2026-07-15 15:01:07 [INFO]: 
+=== chungtu.bant ===
+{
+  "para": [
+    "mabn",
+    "maba",
+    "makb",
+    "iddienbien"
+  ],
+  "payload": {
+    "maba": "2025011041",
+    "mabn": "2026000186",
+    "makb": "2607000003",
+    "channel": "current.qtdieutri",
+    "operation": "INSERT",
+    "iddienbien": "077.20260715.150057",
+    "notification_id": 474588
+  },
+  "sql": "SELECT badt_dhs.getCUTreatmentProcess('2026000186','2025011041','2607000003','077.20260715.150057')",
+  "paraValues": [
+    "'2026000186'",
+    "'2025011041'",
+    "'2607000003'",
+    "'077.20260715.150057'"
+  ]
+}
+======
+
+2026-07-15 15:01:08 [INFO]: {
+  "apiResult": {
+    "Data": "077.20260715.150057",
+    "Message": null,
+    "Result": 0,
+    "ErrorCode": 0,
+    "MessageCode": ""
+  },
+  "data": {
+    "TPCode": "077.20260715.150057",
+    "PatientCode": "2026000186",
+    "AdmissionCode": "2607000003",
+    "MedicalRecordNo": "2025011041",
+    "TPDate": "2026-07-15T15:00:57",
+    "TreatmentDoctorCode": "339",
+    "DepartmentCode": "07",
+    "ParaClinicalResultCommand": "",
+    "VitalSignCommand": "Mạch (lần/phút): 76, Nhiệt độ (°C): 37.0, Huyết áp (mmHg): 120/70, Nhịp thở (lần/phút): 20, Cân nặng (kg): 60.00, Chiều cao (m): 1.55",
+    "RiskOfFalling": 0,
+    "TakeCare": 0,
+    "FollowUpCommand": "Huyết áp, Mạch, Nhiệt độ, Nhịp thở, 12h",
+    "MethodOfTreatmentCommand": "",
+    "NutritionCommand": "",
+    "Infor": "dieenxb iến",
+    "DiseaseName": "",
+    "IsNotChange": false,
+    "FileDocID": "",
+    "FilePath": "",
+    "SignStatus": 0,
+    "Reason": "",
+    "DiagnosisDesc": "Migraine, không đặc hiệu,Bệnh đái tháo đường típ 2, không kèm biến chứng; Bệnh tăng huyết áp vô căn (nguyên phát); Chóng mặt kịch phát lành tính; Hoa mắt và/hoặc chóng mặt; Hoa mắt và/hoặc chóng mặt;Chóng mặt kịch phát lành tính;Td Nhiễm trùng đường hô hấp ;Bệnh tăng huyết áp vô căn (nguyên phát);Bệnh đái tháo đường típ 2, không kèm biến chứng; Td Nhiễm trùng đường hô hấp ",
+    "DiagnosisTraditionalDesc": "",
+    "DiagnosisOtherDesc": "",
+    "VitalSign": {
+      "ExecutorCode": "339",
+      "BloodPressureSystolic": 120,
+      "BloodPressureDiastolic": 70,
+      "BreathBeat": 20,
+      "BodyTemperature": 37,
+      "Weight": 60,
+      "Height": 1.55,
+      "Hb": "0",
+      "FiO2": "0",
+      "Pulse": 76
+    },
+    "Diagnosis": [
+      {
+        "OrderNum": 1,
+        "DiagnosisICDCode": "G43.9",
+        "DiagnosisDesc": "Migraine, không đặc hiệu",
+        "DiagnosisType": 1,
+        "IsMain": true
+      },
+      {
+        "OrderNum": 2,
+        "DiagnosisICDCode": "R42",
+        "DiagnosisDesc": "Hoa mắt và/hoặc chóng mặt",
+        "DiagnosisType": 1,
+        "IsMain": false
+      },
+      {
+        "OrderNum": 3,
+        "DiagnosisICDCode": "H81.1",
+        "DiagnosisDesc": "Chóng mặt kịch phát lành tính",
+        "DiagnosisType": 1,
+        "IsMain": false
+      },
+      {
+        "OrderNum": 4,
+        "DiagnosisICDCode": "J06.9",
+        "DiagnosisDesc": "Td Nhiễm trùng đường hô hấp ",
+        "DiagnosisType": 1,
+        "IsMain": false
+      },
+      {
+        "OrderNum": 5,
+        "DiagnosisICDCode": "I10",
+        "DiagnosisDesc": "Bệnh tăng huyết áp vô căn (nguyên phát)",
+        "DiagnosisType": 1,
+        "IsMain": false
+      },
+      {
+        "OrderNum": 6,
+        "DiagnosisICDCode": "E11.9",
+        "DiagnosisDesc": "Bệnh đái tháo đường típ 2, không kèm biến chứng",
+        "DiagnosisType": 1,
+        "IsMain": false
+      }
+    ],
+    "BedName": "H113",
+    "RoomName": "",
+    "RoomNo": "H113",
+    "BedNo": "H113"
+  },
+  "pathApi": "server/his-server/api/Connect/TreatmentProcess",
+  "payload": {
+    "maba": "2025011041",
+    "mabn": "2026000186",
+    "makb": "2607000003",
+    "channel": "current.qtdieutri",
+    "operation": "INSERT",
+    "iddienbien": "077.20260715.150057",
+    "notification_id": 474588
+  },
+  "msg": {
+    "length": 203,
+    "processId": 2072,
+    "channel": "badt_dhs",
+    "payload": "{\"maba\": \"2025011041\", \"mabn\": \"2026000186\", \"makb\": \"2607000003\", \"channel\": \"current.qtdieutri\", \"operation\": \"INSERT\", \"iddienbien\": \"077.20260715.150057\", \"notification_id\": 474588}",
+    "name": "notification"
+  },
+  "isCancelHandleNotification": false
+}
+======
+
+2026-07-15 15:01:38 [ERROR]: Caption: client.on.error:(isListenRunning:true; timeoutId:-1)
+Name: Error
+Message: Connection terminated unexpectedly
+Stack Trace: Error: Connection terminated unexpectedly
+    at Connection.<anonymous> (D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg\lib\client.js:180:73)
+    at Object.onceWrapper (node:events:633:28)
+    at Connection.emit (node:events:519:28)
+    at Socket.<anonymous> (D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg\lib\connection.js:61:12)
+    at Socket.emit (node:events:519:28)
+    at TCP.<anonymous> (node:net:346:12)
+2026-07-15 15:01:38 [ERROR]: Caption: client.on.end:(isListenRunning:false; timeoutId:447)
+Name: Error
+Message: client.on.end: ⚠️ Client connection ended
+Stack Trace: Error: client.on.end: ⚠️ Client connection ended
+    at Client.<anonymous> (D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\pg-services.js:418:11)
+    at Client.emit (node:events:531:35)
+    at D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg\lib\client.js:203:14
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-07-15 15:01:43 [ERROR]: Caption: initListener.Exception: Failed to initialize listener: :(isListenRunning:false; timeoutId:447)
+Name: Error
+Message: connect EHOSTUNREACH 192.168.50.79:5433
+Stack Trace: Error: connect EHOSTUNREACH 192.168.50.79:5433
+    at D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Timeout.initListener [as _onTimeout] (D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\pg-services.js:193:16)
+Code: EHOSTUNREACH
+2026-07-15 15:01:43 [INFO]: ✅ Client released after initListener error
+2026-07-15 15:01:48 [ERROR]: Caption: initListener.Exception: Failed to initialize listener: :(isListenRunning:false; timeoutId:447)
+Name: Error
+Message: connect EHOSTUNREACH 192.168.50.79:5433
+Stack Trace: Error: connect EHOSTUNREACH 192.168.50.79:5433
+    at D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Timeout.initListener [as _onTimeout] (D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\pg-services.js:193:16)
+Code: EHOSTUNREACH
+2026-07-15 15:01:53 [INFO]: Đang kiểm tra cấu trúc SQL cần cập nhật: [count: 53] ....
+2026-07-15 15:01:53 [INFO]: Đã cập nhật hết cấu trúc!!!
+2026-07-15 15:01:53 [INFO]: Listening for changes on badt_dhs ...
+2026-07-15 15:01:53 [INFO]: ✅ Unlistened all channels
+2026-07-15 15:01:53 [INFO]: ✅ Client released
+2026-07-15 15:01:53 [INFO]: ✅ Pool closed
+2026-07-15 15:01:53 [INFO]: ✅ Cleanup completed
+2026-07-15 15:01:53 [INFO]: 
+=== saveCodeRun ===
+{
+  "updateDB": false,
+  "existsChanged": false
+}
+======
+
+2026-07-15 15:03:00 [INFO]: Khởi động processUnprocessedNotifications sau mỗi 3 phút...
+2026-07-15 15:03:00 [INFO]: processUnprocessedNotifications đã đang chạy {30296}
+2026-07-15 15:06:00 [INFO]: Khởi động processUnprocessedNotifications sau mỗi 3 phút...
+2026-07-15 15:06:00 [INFO]: processUnprocessedNotifications đã đang chạy {30296}
+2026-07-15 15:09:00 [INFO]: Khởi động processUnprocessedNotifications sau mỗi 3 phút...
+2026-07-15 15:09:00 [INFO]: processUnprocessedNotifications đã đang chạy {30296}
+2026-07-15 15:10:21 [INFO]: 📴 SIGINT received - Shutting down gracefully...
+2026-07-15 15:10:21 [INFO]: 🧹 Starting cleanup...
+2026-07-15 15:10:21 [INFO]: ✅ Unlistened all channels
+2026-07-15 15:10:21 [INFO]: ✅ Client released
+2026-07-15 15:10:21 [INFO]: ✅ Pool closed
+2026-07-15 15:10:21 [INFO]: ✅ Cleanup completed
+2026-07-15 15:10:21 [INFO]: ✅ Graceful shutdown completed
+2026-07-15 15:10:21 [ERROR]: Caption: client.on.end:(isListenRunning:true; timeoutId:-1)
+Name: Error
+Message: client.on.end: ⚠️ Client connection ended
+Stack Trace: Error: client.on.end: ⚠️ Client connection ended
+    at Client.<anonymous> (D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\pg-services.js:418:11)
+    at Client.emit (node:events:531:35)
+    at D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg\lib\client.js:203:14
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)

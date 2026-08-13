@@ -1,0 +1,17 @@
+{
+  "Username": "dkct",
+  "Password": "Zq9nDPmsIvI!"
+}
+
+{
+  "Username": "dkomon",
+  "Password": "=Y}9M%fv(Qbt#5."
+}
+
+https://emr.bvdkomon.dhsc.vn
+https://emr.bvdkcantho.dhsc.vn
+
+
+web: https://emr.bvdkomon.dhsc.vn
+Mã nhân viên: 0000
+Mk: Abc@1234

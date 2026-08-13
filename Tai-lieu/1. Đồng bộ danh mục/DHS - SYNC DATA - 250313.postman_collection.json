@@ -1,0 +1,1213 @@
+{
+	"info": {
+		"_postman_id": "4b5ac6fe-86f3-4f03-8ace-cb2f84a08050",
+		"name": "DHS - SYNC DATA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30035592"
+	},
+	"item": [
+		{
+			"name": "SyncCountry - Quốc gia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"CountryCode\": \"VN\", // Mã\n        \"CountryName\": \"Việt Nam\", // Tên\n        \"IsBlocked\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncCountry",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncCountry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncCityProvince - Tỉnh/Thành",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"CityProvinceCode\": \"1\", // Mã\n        \"CityProvinceName\": \"Hồ Chí Minh\", // Tên \n        \"CountryCode\":\"VN\", // Mã Quốc Gia\n        \"IsBlocked\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncCityProvince",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncCityProvince"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncDistrict - Quận/Huyện",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"DistrictCode\": \"1\", // Mã \n        \"DistrictName\":\"Quận 10\", // Tên\n        \"CityProvinceCode\":\"1\", // Mô tả\n        \"IsBlocked\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncDistrict",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncDistrict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncWard - Phường/Xã",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"WardCode\": \"111\", // Mã \n        \"WardName\":\"Phường 25\", // Tên\n        \"DistrictCode\":\"11\", // Mã Tỉnh/Thành\n        \"IsBlocked\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncWard",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncWard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncDepartment - Đồng bộ Khoa Phòng",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://emr.demo.dhsc.vn/server/his-server/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"DepartmentCode\": \"001\",\n    \"DepartmentName\": \"Khoa Nội Thần Kinh\",\n    \"DepartmentShortName\": \"NTK\",\n    \"Description\": \"\",\n    \"Note\": \"\",\n    \"DepartmentType\": \"INUN\", // OEXM - Phòng khám Ngoại trú, INUN - Nội trú\n    \"Active\": true\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncDepartment",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncDepartment"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://emr.demo.dhsc.vn/server/his-server/api/SyncData/SyncDepartment' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'Referer: https://emr.demo.dhsc.vn/server/his-server/swagger/index.html' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' \\\n  -H 'accept: application/json' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"' \\\n  -H 'Content-Type: application/json-patch+json' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  --data-raw $'[\\n  {\\n    \"DepartmentID\": 0,\\n    \"ParentDepartmentID\": 0,\\n    \"DepartmentCode\": \"string\",\\n    \"DepartmentName\": \"string\",\\n    \"DepartmentShortName\": \"string\",\\n    \"Description\": \"string\",\\n    \"Note\": \"string\",\\n    \"DepartmentType\": \"string\",\\n    \"DivisionID\": \"string\",\\n    \"MHDepartmentCode\": \"string\",\\n    \"MHSpecialCode\": \"string\",\\n    \"Active\": true,\\n    \"CreatedDate\": \"2024-11-27T08:31:24.321Z\",\\n    \"CreatedAccID\": 0,\\n    \"LastModifyDate\": \"2024-11-27T08:31:24.321Z\",\\n    \"LastModifyAccID\": 0\\n  }\\n]'"
+			},
+			"response": []
+		},
+		{
+			"name": "SyncEthnic - Dân tộc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"EthnicID\": \"1\", //ID\n        \"EthnicCode\": \"1\", // Mã \n        \"EthnicName\":\"Kinh\", // Tên\n        \"EthnicDesc\":\"Dân tộc Kinh\", // Mô tả\n        \"IsBlocked\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncEthnic",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncEthnic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncICD - ICD10",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"ICDCode\":\"A08.2\", // Mã ICD\n        \"ICDName\": \"Viêm ruột do Adenovirus\", //Tên\n        \"ICDNameEN\": \"Adenoviral enteritis\", // Tên tiếng anh \n        \"ICDLevel\": 0, // cấp - Không có thì để 0\n        \"ICDOrder\": 1, // Số thứ tự\n        \"ParentCode\":\"A08\", // Mã cha - Không có thì để trống\n        \"IsTraditional\": false, // ICD Y học cổ truyền\n        \"IsBlocked\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncICD",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncICD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncOccupation - Nghề nghiệp",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"OccupationID\": \"1\", //ID\n        \"OccupationCode\": \"1\", // Mã \n        \"OccupationName\":\"Học sinh\", // Tên\n        \"IsBlocked\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncOccupation",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncOccupation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncACD - Chức danh",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"AcademicCode\": \"BS\",\n        \"AcademicName\": \"Bác Sĩ\",\n        \"IsBlocked\": true\n    },\n    {\n        \"AcademicCode\": \"Ths\",\n        \"AcademicName\": \"Thạc Sĩ\",\n        \"IsBlocked\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncACD",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncACD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncEmployee - Đồng bộ nhân viên",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://emr.demo.dhsc.vn/server/his-server/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"EmployeeCode\": \"K19-163\",\n    \"EmployeeName\": \"Lê Đức Thịnh\",\n    \"BirthDate\": \"2024-11-27\",\n    \"Sex\": 1, // 1 Nam, 2 Nu, 3 Khác\n    \"MobileNo\": \"0394247691\",\n    \"TelNo\": \"\",\n    \"Email\": \"leducthinh.2408@gmail.com\",\n    \"AcademicCode\": \"BS\",\n    \"Active\": true,\n    \"IDCard\": \"0394247691\",\n    \"DepartmentCode\": \"001\"\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncEmployee",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncEmployee"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://emr.demo.dhsc.vn/server/his-server/api/SyncData/SyncEmployee' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'Referer: https://emr.demo.dhsc.vn/server/his-server/swagger/index.html' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' \\\n  -H 'accept: application/json' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"' \\\n  -H 'Content-Type: application/json-patch+json' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  --data-raw $'[\\n  {\\n    \"EmployeeID\": 0,\\n    \"DivisionID\": \"string\",\\n    \"EmployeeCode\": \"string\",\\n    \"EmployeeName\": \"string\",\\n    \"BirthDate\": \"2024-11-27T08:41:00.306Z\",\\n    \"Sex\": 0,\\n    \"MobileNo\": \"string\",\\n    \"TelNo\": \"string\",\\n    \"Email\": \"string\",\\n    \"DepartmentID\": 0,\\n    \"PersonID\": 0,\\n    \"AcademicID\": 0,\\n    \"IsSystem\": true,\\n    \"Active\": true,\\n    \"IDCard\": \"string\",\\n    \"CreatedDate\": \"2024-11-27T08:41:00.306Z\",\\n    \"CreatedUserID\": 0,\\n    \"UpdatedDate\": \"2024-11-27T08:41:00.306Z\",\\n    \"UpdatedUserID\": 0,\\n    \"DepartmentCode\": \"string\"\\n  }\\n]'"
+			},
+			"response": []
+		},
+		{
+			"name": "SyncStoreHouse - Kho",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"StoreHouseCode\": \"K1\",\n    \"StoreHouseName\": \"Kho 1\",\n    \"IsBlocked\": false, // Khoá \n    \"StoreHouseKind\": \"1\", // Loại kho: 1 Kho lẻ, 2 Tủ trực\n    \"IsOutPatient\": 0, //  0 Nội trú, 1 Kho ngoại trú\n    \"IsHI\": false, // bảo hiểm\n    \"DepartmentCode\": \"\" // Thuộc khoa Khoa phòng\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncStoreHouse",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncStoreHouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncRoom - Đồng bộ Phòng",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://emr.demo.dhsc.vn/server/his-server/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"RoomNo\": \"P10\",\n    \"RoomName\": \"Phòng 10\",\n    \"DepartmentCode\": \"001\",\n    \"IsBlocked\": true\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncRoom",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncRoom"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://emr.demo.dhsc.vn/server/his-server/api/SyncData/SyncRoom' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'Referer: https://emr.demo.dhsc.vn/server/his-server/swagger/index.html' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' \\\n  -H 'accept: application/json' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"' \\\n  -H 'Content-Type: application/json-patch+json' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  --data-raw $'[\\n  {\\n    \"RoomNo\": \"string\",\\n    \"RoomName\": \"string\",\\n    \"DepartmentID\": 0,\\n    \"CreatedDate\": \"2024-11-27T09:08:13.938Z\",\\n    \"CreatedByAccID\": 0,\\n    \"LastModifyDate\": \"2024-11-27T09:08:13.938Z\",\\n    \"LastModifyAccID\": 0,\\n    \"IsBlocked\": true\\n  }\\n]'"
+			},
+			"response": []
+		},
+		{
+			"name": "SyncBed - Đồng bộ Phòng",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://emr.demo.dhsc.vn/server/his-server/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"BedNo\": \"P10.G1\",\n    \"BedName\": \"Gường 1\",\n    \"RoomNo\": \"P10\",\n    \"IsBlocked\": true\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncBed",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncBed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncADM - Thông tin nhập viện",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://emr.demo.dhsc.vn/server/his-server/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"AdmissionCode\": \"24-000001\",\n  \"MedicalRecordNo\": \"2412027001\",\n  \"AdmissionDate\": \"2024-11-27 11:30\",\n  \"PatientObjectCode\": \"1\", \n  \"DepartmentCode\": \"001\",\n  \"RoomNo\": \"P10\",\n  \"BedNo\": \"P10.G1\",\n  \"AdmEmpCode\": \"K19-163\",\n  \"TreatmentDoctorCode\": \"K19-163\",\n  \"TreatmentNursingCode\": \"K19-123\",\n  \"PatientCode\": \"N22-000103\",\n  \"FirstName\": \"Thịnh\",\n  \"LastName\": \"Lê Đức\",\n  \"I_Gender\": 1,\n  \"BirthDate\": \"1994-11-27\",\n  \"BirthYear\": 1994,\n  \"BirthPlaceCode\": \"001\",\n  \"NativeLandCode\": \"001\",\n  \"IDCard\": \"063081238976\",\n  \"IDCardDate\": \"2024-11-27\",\n  \"IDCardPlace\": \"QLHC về TTXH\",\n  \"NationalityCode\": \"001\",\n  \"EthnicCode\": \"1\",\n  \"ReligionCode\": \"1\",\n  \"OccupationCode\": \"2\",\n  \"CurrentAddress\": \"113/59/19 Đường 11\",\n  \"CAWardCode\": \"001\",\n  \"CADistrictCode\": \"002\",\n  \"CACityProvinceCode\": \"003\",\n  \"CACountryCode\": \"001\",\n  \"PersonalEmail\": \"leducthinh.2408@gmail.com\",\n  \"CompanyEmail\": \"\",\n  \"TelNo\": \"\",\n  \"MobileNo\": \"123456789\",\n  \"PassportNumber\": \"\",\n  \"Note\": \"\",\n  \"HIAdmCode\": \"0801112312039\",\n  \"HIAdmDate\": \"2024-11-27\",\n  \"I_RelationshipTypeCode\": \"\",\n  \"RepFullName\": \"Lê Văn A\",\n  \"RepIDCard\": \"06309412112\",\n  \"RepIDCardDate\": \"1990-11-27\",\n  \"RepIDCardPlace\": \"QLHC về TTXH\",\n  \"RepFullAddress\": \"123 Điện biên phủ, P.11, Q. Bình thạnh, TP.HCM\",\n  \"RepMobileNo\": \"0239123711\",\n  \"RepEmail\": \"thannhan@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncADM",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncADM"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncPATFR - Chuyển khoa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://emr.demo.dhsc.vn/server/his-server/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"AdmissionCode\": \"24-000001\",\n  \"OldDepartmentCode\": \"001\",\n  \"DepartmentCode\": \"002\",\n  \"RoomID\": \"P10\",\n  \"OldRoomID\": \"P10\",\n  \"BedID\": \"P10.G1\",\n  \"OldBedID\": \"P10.G1\",\n  \"TransferDate\": \"2024-11-27 11:10\",\n  \"TransferNotes\": \"Chuyển khoa\",\n  \"TransferStatus\": 0, \n  \"OrderNum\": 1, // Số lần\n  \"PatientStatus\": \"3\",\n  //'1','Khỏi'\n  //'2','Giảm'\n  //'3','Không đổi'\n  //'4','Nặng thêm'\n  //'5','Tử vong'\n  //'6','Chưa điều trị'\n  //'7','Hoãn mổ'\n  //'8','Tử vong ngoại viện'\n  \"Diagnosis\": \"chẩn đoán\",\n  \"TransferReason\": \"Hết chỗ\",\n  \"TreatmentDoctorCode\": \"K19-163\",\n  \"TreatmentDepartmentCode\": \"001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncPATFR",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncPATFR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SyncDCHG - Xuất viện",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIzIiwiVXNlck5hbWUiOiJESEciLCJFbXBsb3llZUlEIjoiMSIsIkVtcGxveWVlQ29kZSI6IjAiLCJEaXZpc2lvbklEIjoiREhTIiwiRGVwYXJ0bWVudElEIjoiIiwiRGVwYXJ0bWVudE5hbWUiOiIiLCJSb2xlIjoiIiwibmJmIjoxNzMyODQ3NTMzLCJleHAiOjE3MzI5MzM5MzMsImlhdCI6MTczMjg0NzUzMywiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.JOihZeRgPJXlfSaiZNl11-B3aTgo5GxkLKKVzlZ2-1M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://emr.demo.dhsc.vn/server/his-server/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"AdmissionCode\": \"24-000001\",\n  \"DischargedDate\": \"2024-11-27 12:00\",\n  \"TreatmentDays\": 20,\n  \"DiagnosisICD01s\": \"A01.0,C32.9\",\n  \"DiagnosisICD01Names\": \"Thương hàn(A01.0),U ác của thanh quản, không xác định(C32.9)\",\n  \"IsComplication\": true, // Biến chứng\n  \"IsInfection\": true, // Nhiễm trùng\n  \"IsSurgery\": true,  // Phẫu thuật \n  \"TreatmentResultID\": 0, //Kết quả điều trị\n  \"DischargeTypeID\": 0, // Loại xuất viện\n  \"TransferReasonType\": \"\", // Lý do chuyển\n  \"TransferHospitalCode\": \"\", // Bệnh viện chuyển\n  \"TransferNote\": \"\", // Ghi chú chuyển\n  \"TreatmentMethod\": \"\", // Phương thức điều trị\n  \"TransferDate\": \"2024-11-27 12:00\",\n  \"TransferMethod\": \"\", // Phương tiện chuyển\n  \"EscortEmployeeCodes\": \"\", // Mã nhân viên hộ tống\n  \"PatientStatus\": \"\", // Trạng thái người bệnh\n  \"DeathNo\": \"\", \n  \"DeathReasonType\": \"\",\n  \"Note\": \"\", // Ghi chú\n  \"IsAutopsy\": true, // Khám nghiệm tử thi\n  \"AutopsyICDs\": \"A01.0,C32.9\", // mã chẩn đoán Khám nghiệm tử thi\n  \"AutopsyICDNames\": \"Thương hàn(A01.0),U ác của thanh quản, không xác định(C32.9)\"// chẩn đoán Khám nghiệm tử thi\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/SyncData/SyncDCHG",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"SyncData",
+						"SyncDCHG"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "vi,vi-VN;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "languageid",
+						"value": "VI"
+					},
+					{
+						"key": "origin",
+						"value": "https://emr.demo.dhsc.vn"
+					},
+					{
+						"key": "periodid",
+						"value": "0"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://emr.demo.dhsc.vn/auth/login"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Username\": \"connect\",\n    \"Password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/Auth/Login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"Auth",
+						"Login"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://emr.demo.dhsc.vn/server/his-server/api/Auth/Login' \\\n  -H 'accept: */*' \\\n  -H 'accept-language: vi,vi-VN;q=0.9,en-US;q=0.8,en;q=0.7' \\\n  -H 'authorization: Bearer' \\\n  -H 'content-type: application/json' \\\n  -H 'languageid: VI' \\\n  -H 'origin: https://emr.demo.dhsc.vn' \\\n  -H 'periodid: 0' \\\n  -H 'priority: u=1, i' \\\n  -H 'referer: https://emr.demo.dhsc.vn/auth/login' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'sec-fetch-dest: empty' \\\n  -H 'sec-fetch-mode: cors' \\\n  -H 'sec-fetch-site: same-origin' \\\n  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' \\\n  --data-raw '{\"Username\":\"DHG\",\"Password\":\"123456\"}'"
+			},
+			"response": []
+		}
+	]
+}

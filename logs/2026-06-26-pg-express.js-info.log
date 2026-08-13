@@ -1,0 +1,23 @@
+2026-06-26 09:50:23 [INFO]: [❔][loadEnv] Đang tìm: D:\DH-Coding\DH-Source\dh-javascript-sources\.env
+2026-06-26 09:50:23 [INFO]: [❔][loadEnv] Đang tìm: D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\.env
+2026-06-26 09:50:23 [INFO]: [✅][loadEnv] Xác nhận: D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\.env
+2026-06-26 09:50:24 [INFO]: resultCheckTable:::{
+  "executed": 27,
+  "skipped": 0,
+  "failed": 0,
+  "total": 27,
+  "errors": [],
+  "success": true
+}
+2026-06-26 09:50:25 [INFO]: ✅ Unlistened all channels
+2026-06-26 09:50:25 [INFO]: ✅ Client released
+2026-06-26 09:50:25 [INFO]: ✅ Pool closed
+2026-06-26 09:50:25 [INFO]: ✅ Cleanup completed
+2026-06-26 09:50:25 [INFO]: 
+=== saveCodeRun ===
+{
+  "updateDB": false,
+  "existsChanged": false
+}
+======
+

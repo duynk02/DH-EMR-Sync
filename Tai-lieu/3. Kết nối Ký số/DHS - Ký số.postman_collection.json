@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "99b7d5f8-6041-4aef-855d-518de5707c5d",
+		"name": "DHS - Ký số",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18659496",
+		"_collection_link": "https://portal-api-pkh.postman.co/workspace/52ab4ba6-b56f-477b-8706-1f1750f22593/collection/18659496-99b7d5f8-6041-4aef-855d-518de5707c5d?action=share&source=collection_link&creator=18659496"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\": \"connect\",\r\n    \"Password\": \"ZVCh7lw5RMlBxtB\" // demo ZVCh7lw5RMlBxtB\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/auth/login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendSign",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxMDM3MiIsIkJWVE1ISEhDTSJdLCJuYW1laWQiOiIxMDM3MiIsInJvbGUiOiIiLCJEaXZpc2lvbklEIjoiMCIsIm5iZiI6MTY5NTg2NjE2OCwiZXhwIjoxNjk1ODk0OTY4LCJpYXQiOjE2OTU4NjYxNjgsImlzcyI6IkJUSCIsImF1ZCI6IkludGVncmF0ZS1GaWxlU2lnbiJ9.lXRKzbjn7ZHsJcRZAGHNddbBwiu-Vkj4mQ4qzauLbxQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "HospitalCode",
+							"value": "DHS",
+							"type": "text"
+						},
+						{
+							"key": "PatientCode",
+							"value": "2023-0000002",
+							"type": "text"
+						},
+						{
+							"key": "AdmissionCode",
+							"value": "23-0000002",
+							"type": "text"
+						},
+						{
+							"key": "DepartmentCode",
+							"value": "K001",
+							"type": "text"
+						},
+						{
+							"key": "SignatoryCode",
+							"value": "34305",
+							"type": "text"
+						},
+						{
+							"key": "UserCode",
+							"value": "34305",
+							"type": "text"
+						},
+						{
+							"key": "FileDocTypeCode",
+							"value": "BTH34000",
+							"type": "text"
+						},
+						{
+							"key": "JsonFileXML",
+							"value": "<xml></xml>",
+							"type": "text"
+						},
+						{
+							"key": "JsonCustom",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "FileName",
+							"value": "35435.pdf",
+							"type": "text"
+						},
+						{
+							"key": "File",
+							"type": "file",
+							"src": "/C:/Users/xemph/OneDrive/Desktop/EMR/API ky so.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/Sign/SendFilesSign",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"Sign",
+						"SendFilesSign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StatusSign",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxMDM3MiIsIkJWVE1ISEhDTSJdLCJuYW1laWQiOiIxMDM3MiIsInJvbGUiOiIiLCJEaXZpc2lvbklEIjoiMCIsIm5iZiI6MTY5NTg2NjE2OCwiZXhwIjoxNjk1ODk0OTY4LCJpYXQiOjE2OTU4NjYxNjgsImlzcyI6IkJUSCIsImF1ZCI6IkludGVncmF0ZS1GaWxlU2lnbiJ9.lXRKzbjn7ZHsJcRZAGHNddbBwiu-Vkj4mQ4qzauLbxQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/Sign/CheckSignStatus",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"Sign",
+						"CheckSignStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignView",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxMDM3MiIsIkJWVE1ISEhDTSJdLCJuYW1laWQiOiIxMDM3MiIsInJvbGUiOiIiLCJEaXZpc2lvbklEIjoiMCIsIm5iZiI6MTY5NTg2ODE2OSwiZXhwIjoxNjk1ODk2OTY5LCJpYXQiOjE2OTU4NjgxNjksImlzcyI6IkJUSCIsImF1ZCI6IkludGVncmF0ZS1GaWxlU2lnbiJ9.-g91R99ayjnetIKIfeCaaM0YmL6Z9Ia2UzmcEqYkb0o",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/Sign/ViewFile?filePath=123123.pdf",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"Sign",
+						"ViewFile"
+					],
+					"query": [
+						{
+							"key": "filePath",
+							"value": "123123.pdf"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CancelSign",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6WyIxMDM3MiIsIkJWVE1ISEhDTSJdLCJuYW1laWQiOiIxMDM3MiIsInJvbGUiOiIiLCJEaXZpc2lvbklEIjoiMCIsIm5iZiI6MTY5NTg2NjE2OCwiZXhwIjoxNjk1ODk0OTY4LCJpYXQiOjE2OTU4NjYxNjgsImlzcyI6IkJUSCIsImF1ZCI6IkludGVncmF0ZS1GaWxlU2lnbiJ9.lXRKzbjn7ZHsJcRZAGHNddbBwiu-Vkj4mQ4qzauLbxQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeCode\": \"31926\",\r\n    \"FileDocID\": 123,\r\n    \"CancelledReason\": \"Lỗi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/server/his-server/api/Sign/SendCancelFileSign",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"server",
+						"his-server",
+						"api",
+						"Sign",
+						"SendCancelFileSign"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

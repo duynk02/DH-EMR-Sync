@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\DH-Coding\\DH-Source\\dh-javascript-sources\\src\\EMR-DHS-PG\\pg-services\\logs\\.ae938a844bea5ab7309af21814f608527ba9bc6c-audit.json",
+    "files": [
+        {
+            "date": 1775543174653,
+            "name": "D:\\DH-Coding\\DH-Source\\dh-javascript-sources\\src\\EMR-DHS-PG\\pg-services\\logs\\2026-04-07-pgHanlder.js-warn.log",
+            "hash": "f84dc6d20b4602d1dc794b225adfbc813d713cacc461551665b4e0d2c9b79011"
+        }
+    ],
+    "hashType": "sha256"
+}

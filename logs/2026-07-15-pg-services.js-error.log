@@ -1,0 +1,42 @@
+2026-07-15 15:01:38 [ERROR]: Caption: client.on.error:(isListenRunning:true; timeoutId:-1)
+Name: Error
+Message: Connection terminated unexpectedly
+Stack Trace: Error: Connection terminated unexpectedly
+    at Connection.<anonymous> (D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg\lib\client.js:180:73)
+    at Object.onceWrapper (node:events:633:28)
+    at Connection.emit (node:events:519:28)
+    at Socket.<anonymous> (D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg\lib\connection.js:61:12)
+    at Socket.emit (node:events:519:28)
+    at TCP.<anonymous> (node:net:346:12)
+2026-07-15 15:01:38 [ERROR]: Caption: client.on.end:(isListenRunning:false; timeoutId:447)
+Name: Error
+Message: client.on.end: ⚠️ Client connection ended
+Stack Trace: Error: client.on.end: ⚠️ Client connection ended
+    at Client.<anonymous> (D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\pg-services.js:418:11)
+    at Client.emit (node:events:531:35)
+    at D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg\lib\client.js:203:14
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)
+2026-07-15 15:01:43 [ERROR]: Caption: initListener.Exception: Failed to initialize listener: :(isListenRunning:false; timeoutId:447)
+Name: Error
+Message: connect EHOSTUNREACH 192.168.50.79:5433
+Stack Trace: Error: connect EHOSTUNREACH 192.168.50.79:5433
+    at D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Timeout.initListener [as _onTimeout] (D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\pg-services.js:193:16)
+Code: EHOSTUNREACH
+2026-07-15 15:01:48 [ERROR]: Caption: initListener.Exception: Failed to initialize listener: :(isListenRunning:false; timeoutId:447)
+Name: Error
+Message: connect EHOSTUNREACH 192.168.50.79:5433
+Stack Trace: Error: connect EHOSTUNREACH 192.168.50.79:5433
+    at D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Timeout.initListener [as _onTimeout] (D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\pg-services.js:193:16)
+Code: EHOSTUNREACH
+2026-07-15 15:10:21 [ERROR]: Caption: client.on.end:(isListenRunning:true; timeoutId:-1)
+Name: Error
+Message: client.on.end: ⚠️ Client connection ended
+Stack Trace: Error: client.on.end: ⚠️ Client connection ended
+    at Client.<anonymous> (D:\DH-Coding\DH-Source\dh-javascript-sources\src\EMR-DHS-PG\pg-services.js:418:11)
+    at Client.emit (node:events:531:35)
+    at D:\DH-Coding\DH-Source\dh-javascript-sources\node_modules\pg\lib\client.js:203:14
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)

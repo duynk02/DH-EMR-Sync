@@ -1,0 +1,29 @@
+SELECT badt_dhs.insertdiagnose('
+{
+			"TPCode": "2508120941-027473",				
+			"ParaClinReqCode": "2508120941-15381_00",	
+			"PatientCode": "2025019956",				
+			"AdmissionCode": "2508002028",				
+			"MedicalRecordNo": "2025007212",			
+			"PCReqDltVoucherNo": "",
+			"OrderNo": 1,
+			"MedSerCode": "CH2886",
+			"MedSerName": "Chụp X-quang ngực thẳng [số hóa 1 phim]",
+			"UOMID": null,
+			"UOMCode": null,
+			"ParaClinQty": 1.0,
+			"PCReqDtlNotes": " ",
+			"PatientObject": 1,
+			"NgayChiDinh": "2025-08-12T09:41:00Z",		
+			"NgayThucHien": "2025-08-12T09:44:00Z",			
+			"NgayKetQua": "2025-08-12T09:50:00Z",	
+			"MaMayThucHien": "XQ.1.92007.141011",		
+			"MaDonViThucHien": "09",					
+			"MaPhongThucHien": "XQ",					
+			"MaNhanVienThucHien": "85",					
+			"MaNhanVienTraKQ": "336",					
+			"KetLuan": "Chưa ghi nhận bất thường",		
+			"MoTa": "Gan:: Cấu trúc echo đồng nhất, mặt gan phẳng, bờ gan đều, kích thước bình thường. Hệ thống tĩnh mạch trên gan, tĩnh mạch cửa không dãn.Mật:: Đường mật trong gan, ống mật chủ không dãn...", 
+			"GhiChu": "Tái khám khi đau hạ sườn phải"	
+		}
+')

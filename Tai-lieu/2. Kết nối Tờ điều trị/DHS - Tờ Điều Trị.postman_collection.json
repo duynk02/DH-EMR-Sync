@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "926c7062-9e0d-4267-9e26-4eec687ab0b4",
+		"name": "DHS - Tờ Điều Trị",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30035592"
+	},
+	"item": [
+		{
+			"name": "GetTreatmentProcess - Xem thông tin điều trị",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMSIsIlVzZXJOYW1lIjoixJBEVEguIFRy4bqnbiBCw6kgQmEiLCJFbXBsb3llZUlEIjoiMTMiLCJFbXBsb3llZUNvZGUiOiIwMDA4IiwiRGl2aXNpb25JRCI6IkRIUyIsIkRlcGFydG1lbnRJRCI6IjgiLCJEZXBhcnRtZW50TmFtZSI6IktIT0EgSOG7kkkgU-G7qEMgQ-G6pFAgQ-G7qFUiLCJSb2xlIjoiIiwibmJmIjoxNzQ1MjIyNzM1LCJleHAiOjE3NDUzMDkxMzUsImlhdCI6MTc0NTIyMjczNSwiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.lhlsiPZ0Mt0qobSJ2UwFmJtDwznLeUEE1R5bt53sGuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "Referer",
+						"value": "https://emr.demo.dhsc.vn/server/his-server/swagger/index.html"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api/Connect/TreatmentProcess?TPCode=N25250421-0001",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Connect",
+						"TreatmentProcess"
+					],
+					"query": [
+						{
+							"key": "TPCode",
+							"value": "N25250421-0001"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://emr.demo.dhsc.vn/server/his-server/api/SyncData/SyncEmployee' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  -H 'Referer: https://emr.demo.dhsc.vn/server/his-server/swagger/index.html' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36' \\\n  -H 'accept: application/json' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"' \\\n  -H 'Content-Type: application/json-patch+json' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  --data-raw $'[\\n  {\\n    \"EmployeeID\": 0,\\n    \"DivisionID\": \"string\",\\n    \"EmployeeCode\": \"string\",\\n    \"EmployeeName\": \"string\",\\n    \"BirthDate\": \"2024-11-27T08:41:00.306Z\",\\n    \"Sex\": 0,\\n    \"MobileNo\": \"string\",\\n    \"TelNo\": \"string\",\\n    \"Email\": \"string\",\\n    \"DepartmentID\": 0,\\n    \"PersonID\": 0,\\n    \"AcademicID\": 0,\\n    \"IsSystem\": true,\\n    \"Active\": true,\\n    \"IDCard\": \"string\",\\n    \"CreatedDate\": \"2024-11-27T08:41:00.306Z\",\\n    \"CreatedUserID\": 0,\\n    \"UpdatedDate\": \"2024-11-27T08:41:00.306Z\",\\n    \"UpdatedUserID\": 0,\\n    \"DepartmentCode\": \"string\"\\n  }\\n]'"
+			},
+			"response": []
+		},
+		{
+			"name": "CUTreatmentProcess - Tạo và cập nhật tờ điều trị",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMSIsIlVzZXJOYW1lIjoixJBEVEguIFRy4bqnbiBCw6kgQmEiLCJFbXBsb3llZUlEIjoiMTMiLCJFbXBsb3llZUNvZGUiOiIwMDA4IiwiRGl2aXNpb25JRCI6IkRIUyIsIkRlcGFydG1lbnRJRCI6IjgiLCJEZXBhcnRtZW50TmFtZSI6IktIT0EgSOG7kkkgU-G7qEMgQ-G6pFAgQ-G7qFUiLCJSb2xlIjoiIiwibmJmIjoxNzQ1MjIyNzM1LCJleHAiOjE3NDUzMDkxMzUsImlhdCI6MTc0NTIyMjczNSwiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.lhlsiPZ0Mt0qobSJ2UwFmJtDwznLeUEE1R5bt53sGuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"TPCode\": \"N25250421-0001\",\n    \"AdmissionCode\": \"20250032972025000445\",\n    \"MedicalRecordNo\": \"2025000445\",\n    \"PatientCode\": \"2025003297\",\n    \"TPDate\": \"2025-04-10 \",\n    \"TreatmentDoctorCode\": \"0008\",\n    \"DepartmentCode\": \"001\",\n    \"ParaClinicalResultCommand\": \"\",\n    \"VitalSignCommand\": \"\",\n    \"RiskOfFalling\": 3,\n    \"TakeCare\": 3,\n    \"FollowUpCommand\": \"Theo dõi spO2, huyết áp\",\n    \"MethodOfTreatmentCommand\": \"\",\n    \"NutritionCommand\": \"Cơm\",\n    \"Infor\": \"<p>Bệnh tỉnh, tiếp xúc được, da niêm hồng</p><p>Ho đàm đục khó khạc</p><p>Khó thở, khò khè</p><p>Nặng ngực</p><p>Tim đều, phổi ran rít, ngáy</p><p>Bụng mềm</p>\",\n    \"DiseaseName\": \"\",\n    \"IsNotChange\": false,\n    \"FileDocID\": \"004cce68-faa7-420d-9aa0-7fd87d4bb8c5\",\n    \"FilePath\": \"2025:04:10:20250032972025000445_2025003297_EMR120002_a17255b49cb1454cbf4039891724616d.pdf\",\n    \"SignStatus\": 2,\n    \"Reason\": \"\",\n    \"DiagnosisDesc\": \"Bệnh phổi tắc nghẽn mãn tính đợt cấp do bội nhiễm (J44.0), Bệnh lý tăng huyết áp (I10)\",\n    \"DiagnosisTraditionalDesc\": \"\",\n    \"DiagnosisOtherDesc\": \"\",\n    \"Diagnosis\": [{\n        \"OrderNum\": 1,\n        \"DiagnosisICDCode\" : \"J44.0\",\n        \"DiagnosisDesc\":\"Bệnh phổi tắc nghẽn mãn tính đợt cấp do bội nhiễm (J44.0)\",\n        \"DiagnosisType\": 1,\n        \"IsMain\" : true \n    },{\n        \"OrderNum\": 2,\n        \"DiagnosisICDCode\" : \"I10\",\n        \"DiagnosisDesc\":\" Bệnh lý tăng huyết áp (I10)\",\n        \"DiagnosisType\": 1,\n        \"IsMain\" : false \n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Connect/TreatmentProcess",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Connect",
+						"TreatmentProcess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DTreatmentProcess - Xoá tờ điều trị",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMSIsIlVzZXJOYW1lIjoixJBEVEguIFRy4bqnbiBCw6kgQmEiLCJFbXBsb3llZUlEIjoiMTMiLCJFbXBsb3llZUNvZGUiOiIwMDA4IiwiRGl2aXNpb25JRCI6IkRIUyIsIkRlcGFydG1lbnRJRCI6IjgiLCJEZXBhcnRtZW50TmFtZSI6IktIT0EgSOG7kkkgU-G7qEMgQ-G6pFAgQ-G7qFUiLCJSb2xlIjoiIiwibmJmIjoxNzQ1MjIyNzM1LCJleHAiOjE3NDUzMDkxMzUsImlhdCI6MTc0NTIyMjczNSwiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.lhlsiPZ0Mt0qobSJ2UwFmJtDwznLeUEE1R5bt53sGuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"TPCode\": \"N25250421-0001\",\n    \"AdmissionCode\": \"20250032972025000445\",\n    \"MedicalRecordNo\": \"2025000445\",\n    \"PatientCode\": \"2025003297\",\n    \"TPDate\": \"2025-04-10 \",\n    \"TreatmentDoctorCode\": \"0008\",\n    \"DepartmentCode\": \"001\",\n    \"ParaClinicalResultCommand\": \"\",\n    \"VitalSignCommand\": \"\",\n    \"RiskOfFalling\": 3,\n    \"TakeCare\": 3,\n    \"FollowUpCommand\": \"Theo dõi spO2, huyết áp\",\n    \"MethodOfTreatmentCommand\": \"\",\n    \"NutritionCommand\": \"Cơm\",\n    \"Infor\": \"<p>Bệnh tỉnh, tiếp xúc được, da niêm hồng</p><p>Ho đàm đục khó khạc</p><p>Khó thở, khò khè</p><p>Nặng ngực</p><p>Tim đều, phổi ran rít, ngáy</p><p>Bụng mềm</p>\",\n    \"DiseaseName\": \"\",\n    \"IsNotChange\": false,\n    \"FileDocID\": \"004cce68-faa7-420d-9aa0-7fd87d4bb8c5\",\n    \"FilePath\": \"2025:04:10:20250032972025000445_2025003297_EMR120002_a17255b49cb1454cbf4039891724616d.pdf\",\n    \"SignStatus\": 2,\n    \"Reason\": \"\",\n    \"DiagnosisDesc\": \"Bệnh phổi tắc nghẽn mãn tính đợt cấp do bội nhiễm (J44.0), Bệnh lý tăng huyết áp (I10)\",\n    \"DiagnosisTraditionalDesc\": \"\",\n    \"DiagnosisOtherDesc\": \"\",\n    \"Diagnosis\": [{\n        \"OrderNum\": 1,\n        \"DiagnosisICDCode\" : \"J44.0\",\n        \"DiagnosisDesc\":\"Bệnh phổi tắc nghẽn mãn tính đợt cấp do bội nhiễm (J44.0)\",\n        \"DiagnosisType\": 1,\n        \"IsMain\" : true \n    },{\n        \"OrderNum\": 2,\n        \"DiagnosisICDCode\" : \"I10\",\n        \"DiagnosisDesc\":\" Bệnh lý tăng huyết áp (I10)\",\n        \"DiagnosisType\": 1,\n        \"IsMain\" : false \n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Connect/TreatmentProcess?TPCode=N25250421-0001",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Connect",
+						"TreatmentProcess"
+					],
+					"query": [
+						{
+							"key": "TPCode",
+							"value": "N25250421-0001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignTreatmentProcess - Ký số tờ điều trị",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMSIsIlVzZXJOYW1lIjoixJBEVEguIFRy4bqnbiBCw6kgQmEiLCJFbXBsb3llZUlEIjoiMTMiLCJFbXBsb3llZUNvZGUiOiIwMDA4IiwiRGl2aXNpb25JRCI6IkRIUyIsIkRlcGFydG1lbnRJRCI6IjgiLCJEZXBhcnRtZW50TmFtZSI6IktIT0EgSOG7kkkgU-G7qEMgQ-G6pFAgQ-G7qFUiLCJSb2xlIjoiIiwibmJmIjoxNzQ1MjIyNzM1LCJleHAiOjE3NDUzMDkxMzUsImlhdCI6MTc0NTIyMjczNSwiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.lhlsiPZ0Mt0qobSJ2UwFmJtDwznLeUEE1R5bt53sGuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"TPCode\": \"N25250421-0001\",\n    \"EmpCode\": \"0008\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Connect/SignTreatmentProcess",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Connect",
+						"SignTreatmentProcess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUTPPrescription - Tạo và cập nhật chỉ định thuốc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMSIsIlVzZXJOYW1lIjoixJBEVEguIFRy4bqnbiBCw6kgQmEiLCJFbXBsb3llZUlEIjoiMTMiLCJFbXBsb3llZUNvZGUiOiIwMDA4IiwiRGl2aXNpb25JRCI6IkRIUyIsIkRlcGFydG1lbnRJRCI6IjgiLCJEZXBhcnRtZW50TmFtZSI6IktIT0EgSOG7kkkgU-G7qEMgQ-G6pFAgQ-G7qFUiLCJSb2xlIjoiIiwibmJmIjoxNzQ1MjIyNzM1LCJleHAiOjE3NDUzMDkxMzUsImlhdCI6MTc0NTIyMjczNSwiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.lhlsiPZ0Mt0qobSJ2UwFmJtDwznLeUEE1R5bt53sGuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"TPCode\": \"N25250421-0001\",\n    \"AdmissionCode\": \"20250032972025000445\",\n    \"MedicalRecordNo\": \"2025000445\",\n    \"PatientCode\": \"2025003297\",\n    \"EmployeeCode\": \"0008\",\n    \"PresCode\": \"P25250421-0001\",\n    \"Prescriptions\": [\n        {\n            \"OrderNo\": 1,\n            \"InventoryID\": 13389,\n            \"InventoryCode\": \"C13\",\n            \"InvDesc\": \"Antifoxim 1g(Cefotaxim)\",\n            \"TimePerDay\": 2,\n            \"DoseQty\": 2.0000,\n            \"DoseUOMID\": 11,\n            \"DoseUOMCode\": \"lo\",\n            \"DoseUOMName\": \"Lọ\",\n            \"MedUsageID\": 7,\n            \"MedUsageCode\": null,\n            \"DispenseQty\": 8.0000,\n            \"DispenseUOMID\": 0,\n            \"DispenseUOMCode\": null,\n            \"OriDispenseQty\": 8.0000,\n            \"InstructionText\": \"\",\n            \"PNoteDtl\": \"\",\n            \"DateOfUseOrderNo\": 1,\n            \"TransferRate\": \"\",\n            \"TransferUnitID\": null,\n            \"TransferUnitCode\": null,\n            \"StoreHouse\": \"\",\n            \"PatientObject\": 1,\n            \"IsMorning\": true,\n            \"IsMidday\": null,\n            \"IsAfternoon\": true,\n            \"IsEvening\": null,\n            \"MorningTime\": \"08:50\",\n            \"MiddayTime\": \"\",\n            \"AfternoonTime\": \"18:00\",\n            \"EveningTime\": \"\",\n            \"MorningQty\": 2.0,\n            \"MiddayQty\": null,\n            \"AfternoonQty\": 2.0,\n            \"EveningQty\": null,\n            \"DateOfUse\": 2,\n            \"FromDate\": \"2025-04-10T09:25:16Z\",\n            \"ToDate\": \"2025-04-11T09:25:16Z\",\n            \"PType\": \"WM\",\n            \"Hospital\": \"\"\n        },\n        {\n            \"OrderNo\": 2,\n            \"InventoryID\": 13692,\n            \"InventoryCode\": \"M79\",\n            \"InvDesc\": \"Methylprednisolon 40mg\",\n            \"TimePerDay\": 1,\n            \"DoseQty\": 1.0000,\n            \"DoseUOMID\": 11,\n            \"DoseUOMCode\": \"lo\",\n            \"DoseUOMName\": \"Lọ\",\n            \"MedUsageID\": 7,\n            \"MedUsageCode\": null,\n            \"DispenseQty\": 2.0000,\n            \"DispenseUOMID\": 0,\n            \"DispenseUOMCode\": null,\n            \"OriDispenseQty\": 2.0000,\n            \"InstructionText\": \"\",\n            \"PNoteDtl\": \"\",\n            \"DateOfUseOrderNo\": 1,\n            \"TransferRate\": \"\",\n            \"TransferUnitID\": null,\n            \"TransferUnitCode\": null,\n            \"StoreHouse\": \"\",\n            \"PatientObject\": 1,\n            \"IsMorning\": true,\n            \"IsMidday\": null,\n            \"IsAfternoon\": null,\n            \"IsEvening\": null,\n            \"MorningTime\": \"08:50\",\n            \"MiddayTime\": \"\",\n            \"AfternoonTime\": \"\",\n            \"EveningTime\": \"\",\n            \"MorningQty\": 1.0,\n            \"MiddayQty\": null,\n            \"AfternoonQty\": null,\n            \"EveningQty\": null,\n            \"DateOfUse\": 2,\n            \"FromDate\": \"2025-04-10T09:25:16Z\",\n            \"ToDate\": \"2025-04-11T09:25:16Z\",\n            \"PType\": \"WM\",\n            \"Hospital\": \"\"\n        },\n        {\n            \"OrderNo\": 3,\n            \"InventoryID\": 13989,\n            \"InventoryCode\": \"V60\",\n            \"InvDesc\": \"Salbutamol (Vinsalmol)\",\n            \"TimePerDay\": 4,\n            \"DoseQty\": 0.5000,\n            \"DoseUOMID\": 12,\n            \"DoseUOMCode\": \"ong\",\n            \"DoseUOMName\": \"Ống\",\n            \"MedUsageID\": 37,\n            \"MedUsageCode\": null,\n            \"DispenseQty\": 4.0000,\n            \"DispenseUOMID\": 0,\n            \"DispenseUOMCode\": null,\n            \"OriDispenseQty\": 4.0000,\n            \"InstructionText\": \"\",\n            \"PNoteDtl\": \"\",\n            \"DateOfUseOrderNo\": 1,\n            \"TransferRate\": \"\",\n            \"TransferUnitID\": null,\n            \"TransferUnitCode\": null,\n            \"StoreHouse\": \"\",\n            \"PatientObject\": 1,\n            \"IsMorning\": true,\n            \"IsMidday\": true,\n            \"IsAfternoon\": true,\n            \"IsEvening\": true,\n            \"MorningTime\": \"\",\n            \"MiddayTime\": \"\",\n            \"AfternoonTime\": \"\",\n            \"EveningTime\": \"\",\n            \"MorningQty\": 0.5,\n            \"MiddayQty\": 0.5,\n            \"AfternoonQty\": 0.5,\n            \"EveningQty\": 0.5,\n            \"DateOfUse\": 2,\n            \"FromDate\": \"2025-04-10T09:25:16Z\",\n            \"ToDate\": \"2025-04-11T09:25:16Z\",\n            \"PType\": \"WM\",\n            \"Hospital\": \"\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Connect/CUTPPrescription",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Connect",
+						"CUTPPrescription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DTPPrescription - Xoá chỉ định thuốc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMSIsIlVzZXJOYW1lIjoixJBEVEguIFRy4bqnbiBCw6kgQmEiLCJFbXBsb3llZUlEIjoiMTMiLCJFbXBsb3llZUNvZGUiOiIwMDA4IiwiRGl2aXNpb25JRCI6IkRIUyIsIkRlcGFydG1lbnRJRCI6IjgiLCJEZXBhcnRtZW50TmFtZSI6IktIT0EgSOG7kkkgU-G7qEMgQ-G6pFAgQ-G7qFUiLCJSb2xlIjoiIiwibmJmIjoxNzQ1MjIyNzM1LCJleHAiOjE3NDUzMDkxMzUsImlhdCI6MTc0NTIyMjczNSwiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.lhlsiPZ0Mt0qobSJ2UwFmJtDwznLeUEE1R5bt53sGuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Connect/DTPPrescription?PresCode=P25250421-0001",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Connect",
+						"DTPPrescription"
+					],
+					"query": [
+						{
+							"key": "PresCode",
+							"value": "P25250421-0001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUTPParaClinRequest - Tạo và cập nhật chỉ định CLS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMSIsIlVzZXJOYW1lIjoixJBEVEguIFRy4bqnbiBCw6kgQmEiLCJFbXBsb3llZUlEIjoiMTMiLCJFbXBsb3llZUNvZGUiOiIwMDA4IiwiRGl2aXNpb25JRCI6IkRIUyIsIkRlcGFydG1lbnRJRCI6IjgiLCJEZXBhcnRtZW50TmFtZSI6IktIT0EgSOG7kkkgU-G7qEMgQ-G6pFAgQ-G7qFUiLCJSb2xlIjoiIiwibmJmIjoxNzQ1MjIyNzM1LCJleHAiOjE3NDUzMDkxMzUsImlhdCI6MTc0NTIyMjczNSwiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.lhlsiPZ0Mt0qobSJ2UwFmJtDwznLeUEE1R5bt53sGuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"TPCode\": \"N25250421-0001\",\n    \"AdmissionCode\": \"20250032972025000445\",\n    \"MedicalRecordNo\": \"2025000445\",\n    \"PatientCode\": \"2025003297\",\n    \"EmployeeCode\": \"0008\",\n    \"ParaClinReqCode\": \"C25250421-0001\",\n    \"ParaClinRequests\": [\n        {\n            \"PCReqDltVoucherNo\": \"\",\n            \"OrderNo\": 1,\n            \"MedSerID\": 6073,\n            \"MedSerCode\": \"KH78\",\n            \"MedSerName\": \"Khí dung thuốc giãn phế quản\",\n            \"UOMID\": null,\n            \"UOMCode\": null,\n            \"ParaClinQty\": 1.0,\n            \"PCReqDtlNotes\": \" \",\n            \"PatientObject\": 1,\n            \"FromDate\": \"2025-04-09T17:00:00Z\",\n            \"ToDate\": \"2025-04-09T17:00:00Z\"\n        },\n        {\n            \"PCReqDltVoucherNo\": \"\",\n            \"OrderNo\": 2,\n            \"MedSerID\": 6297,\n            \"MedSerCode\": \"DI265\",\n            \"MedSerName\": \"Điện tim thường\",\n            \"UOMID\": null,\n            \"UOMCode\": null,\n            \"ParaClinQty\": 1.0,\n            \"PCReqDtlNotes\": \" \",\n            \"PatientObject\": 1,\n            \"FromDate\": \"2025-04-09T17:00:00Z\",\n            \"ToDate\": \"2025-04-09T17:00:00Z\"\n        },\n        {\n            \"PCReqDltVoucherNo\": \"202504101634-0001\",\n            \"OrderNo\": 3,\n            \"MedSerID\": 5737,\n            \"MedSerCode\": \"NE01\",\n            \"MedSerName\": \"Neutrophile\",\n            \"UOMID\": null,\n            \"UOMCode\": null,\n            \"ParaClinQty\": 1.0,\n            \"PCReqDtlNotes\": \" \",\n            \"PatientObject\": 1,\n            \"FromDate\": \"2025-04-09T17:00:00Z\",\n            \"ToDate\": \"2025-04-09T17:00:00Z\"\n        },\n        {\n            \"PCReqDltVoucherNo\": \"202504101634-0001\",\n            \"OrderNo\": 4,\n            \"MedSerID\": 5806,\n            \"MedSerCode\": \"MC10\",\n            \"MedSerName\": \"MCV\",\n            \"UOMID\": null,\n            \"UOMCode\": null,\n            \"ParaClinQty\": 1.0,\n            \"PCReqDtlNotes\": \" \",\n            \"PatientObject\": 1,\n            \"FromDate\": \"2025-04-09T17:00:00Z\",\n            \"ToDate\": \"2025-04-09T17:00:00Z\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/Connect/CUTPParaClinRequest",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Connect",
+						"CUTPParaClinRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DTPParaClinRequest - Xoá chỉ định CLS",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SUQiOiIxMSIsIlVzZXJOYW1lIjoixJBEVEguIFRy4bqnbiBCw6kgQmEiLCJFbXBsb3llZUlEIjoiMTMiLCJFbXBsb3llZUNvZGUiOiIwMDA4IiwiRGl2aXNpb25JRCI6IkRIUyIsIkRlcGFydG1lbnRJRCI6IjgiLCJEZXBhcnRtZW50TmFtZSI6IktIT0EgSOG7kkkgU-G7qEMgQ-G6pFAgQ-G7qFUiLCJSb2xlIjoiIiwibmJmIjoxNzQ1MjIyNzM1LCJleHAiOjE3NDUzMDkxMzUsImlhdCI6MTc0NTIyMjczNSwiaXNzIjoiREhTIiwiYXVkIjoiREhTIn0.lhlsiPZ0Mt0qobSJ2UwFmJtDwznLeUEE1R5bt53sGuQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/Connect/DTPParaClinRequest?ParaClinReqCode=C25250421-0001",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"Connect",
+						"DTPParaClinRequest"
+					],
+					"query": [
+						{
+							"key": "ParaClinReqCode",
+							"value": "C25250421-0001"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

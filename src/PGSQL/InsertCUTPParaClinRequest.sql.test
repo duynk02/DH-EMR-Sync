@@ -1,0 +1,37 @@
+﻿-- Sử dụng:
+SELECT badt_dhs.insertcutpparaclinrequest('{
+	"TPCode": "KN6.20250613.084935",
+	"AdmissionCode": "2506010891",
+	"MedicalRecordNo": "2025007087",
+	"ParaClinReqCode": "2025007087_20250613084970",
+	"PatientCode": "2019001150",
+	"EmployeeCode": "60",
+	"ParaClinRequests": [
+		{
+			"PCReqDltVoucherNo": "",
+			"OrderNo": 0,
+			"MedSerCode": "XE11",
+			"MedSerName": "Xét nghiệm đường máu mao mạch tại giường (một lần)",
+			"UOMCode": "mg/dl",
+			"ParaClinQty": 1.0,
+			"PCReqDtlNotes": null,
+			"PatientObject": 1,
+			"FromDate": "2025-06-17T16:33:24Z",
+			"ToDate": "2025-06-17T16:33:24Z"
+		},
+		{
+			"PCReqDltVoucherNo": "",
+			"OrderNo": 0,
+			"MedSerCode": "AN04",
+			"MedSerName": "Anti - HIV(nhanh)",
+			"UOMCode": "lần",
+			"ParaClinQty": 1.0,
+			"PCReqDtlNotes": null,
+			"PatientObject": 1,
+			"FromDate": "2025-06-17T16:33:24Z",
+			"ToDate": "2025-06-17T16:33:24Z"
+		}
+	]
+}
+')
+

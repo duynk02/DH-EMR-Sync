@@ -1,0 +1,316 @@
+﻿SELECT * FROM badt_dhs.inserttreatmentprocess('
+{
+    "TPCode": "Z12.20250619.1129V4",
+    "PatientCode": "2023031755",
+    "AdmissionCode": "2505011166",
+    "MedicalRecordNo": "017517",
+    "TPDate": "2025-06-19",
+    "TreatmentDoctorCode": "732",
+    "DepartmentCode": "06",
+    "ParaClinicalResultCommand": "",
+    "VitalSignCommand": "",
+    "RiskOfFalling": 0,
+    "TakeCare": 0,
+    "FollowUpCommand": "thêm cls\r\nCSC III",
+    "MethodOfTreatmentCommand": "",
+    "NutritionCommand": "",
+    "Infor": "Bệnh tỉnh táo, Tiếp xúc tốt, Da niêm hồng. Bụng mềm \r\n",
+    "DiseaseName": "",
+    "IsNotChange": false,
+    "FileDocID": "",
+    "FilePath": "",
+    "SignStatus": 0,
+    "Reason": "",
+    "DiagnosisDesc": "Viêm phúc mạc,Viêm phúc mạc do thủng túi thừa chổ nối sigma - trực tràng;Bệnh đái tháo đường không phụ thuộc insuline;Các thiếu máu khác;Suy gan, không đặc hiệu;Suy thận không xác định;Rối loạn cân bằng nước, điện giải và thăng bằng kiềm toan;Đau bụng không xác định và đau bụng khác;Rối loạn đông máu không đặc hiệu;Suy mòn;Bệnh tim thiếu máu cục bộ mạn",
+    "DiagnosisTraditionalDesc": "",
+    "DiagnosisOtherDesc": "",
+    "Diagnosis": [
+        {
+            "OrderNum": 1,
+            "DiagnosisICDCode": "K65",
+            "DiagnosisDesc": "Viêm phúc mạc",
+            "DiagnosisType": 1,
+            "IsMain": true
+        },
+        {
+            "OrderNum": 2,
+            "DiagnosisICDCode": "I10;E11;D64;K72.9;N19;E87;R10.4;D68.9;R64;I25",
+            "DiagnosisDesc": "Viêm phúc mạc do thủng túi thừa chổ nối sigma - trực tràng;Bệnh đái tháo đường không phụ thuộc insuline;Các thiếu máu khác;Suy gan, không đặc hiệu;Suy thận không xác định;Rối loạn cân bằng nước, điện giải và thăng bằng kiềm toan;Đau bụng không xác định và đau bụng khác;Rối loạn đông máu không đặc hiệu;Suy mòn;Bệnh tim thiếu máu cục bộ mạn",
+            "DiagnosisType": 1,
+            "IsMain": false
+        }
+    ],
+    "EmployeeCode": "732",
+    "PresCode": "Z12.X25.0619.1308P3",
+    "Prescriptions": [
+        {
+            "OrderNo": 1,
+            "InventoryID": 0,
+            "InventoryCode": "AV66",
+            "InvDesc": "Avodart",
+            "TimePerDay": 1,
+            "DoseQty": 10,
+            "DoseUOMID": 0,
+            "DoseUOMCode": "Viên",
+            "DoseUOMName": "Viên",
+            "MedUsageID": 0,
+            "MedUsageCode": "Uống",
+            "DispenseQty": 0,
+            "DispenseUOMID": 0,
+            "DispenseUOMCode": "",
+            "OriDispenseQty": 0,
+            "InstructionText": "",
+            "PNoteDtl": "",
+            "DateOfUseOrderNo": 1,
+            "TransferRate": "",
+            "TransferUnitID": "",
+            "TransferUnitCode": "",
+            "StoreHouse": "02",
+            "PatientObject": 0,
+            "IsMorning": false,
+            "IsMidday": false,
+            "IsAfternoon": false,
+            "IsEvening": false,
+            "MorningTime": "",
+            "MiddayTime": "",
+            "AfternoonTime": "",
+            "EveningTime": "",
+            "MorningQty": 0,
+            "MiddayQty": 0,
+            "AfternoonQty": 0,
+            "EveningQty": 0,
+            "DatOfUse": 1,
+            "FromDate": "2025-06-19",
+            "ToDate": "2025-06-20T00:00:00",
+            "PType": "WM",
+            "Hospital": ""
+        },
+        {
+            "OrderNo": 2,
+            "InventoryID": 0,
+            "InventoryCode": "AT100",
+            "InvDesc": "Atropin Sulphat",
+            "TimePerDay": 1,
+            "DoseQty": 10,
+            "DoseUOMID": 0,
+            "DoseUOMCode": "Ống",
+            "DoseUOMName": "Ống",
+            "MedUsageID": 0,
+            "MedUsageCode": "Tiêm",
+            "DispenseQty": 0,
+            "DispenseUOMID": 0,
+            "DispenseUOMCode": "",
+            "OriDispenseQty": 0,
+            "InstructionText": "",
+            "PNoteDtl": "",
+            "DateOfUseOrderNo": 1,
+            "TransferRate": "",
+            "TransferUnitID": "",
+            "TransferUnitCode": "",
+            "StoreHouse": "02",
+            "PatientObject": 0,
+            "IsMorning": false,
+            "IsMidday": false,
+            "IsAfternoon": false,
+            "IsEvening": false,
+            "MorningTime": "",
+            "MiddayTime": "",
+            "AfternoonTime": "",
+            "EveningTime": "",
+            "MorningQty": 0,
+            "MiddayQty": 0,
+            "AfternoonQty": 0,
+            "EveningQty": 0,
+            "DatOfUse": 1,
+            "FromDate": "2025-06-19",
+            "ToDate": "2025-06-20T00:00:00",
+            "PType": "WM",
+            "Hospital": ""
+        }
+    ],
+    "ParaClinReqCode": "017517_20250619130932",
+    "ParaClinRequests": [
+        {
+            "PCReqDltVoucherNo": "",
+            "OrderNo": 0,
+            "MedSerCode": "BE139",
+            "MedSerName": "Bẻ cuốn mũi",
+            "UOMCode": "Lần",
+            "ParaClinQty": 1,
+            "PCReqDtlNotes": null,
+            "PatientObject": 1,
+            "FromDate": "2025-06-19T20:40:42Z",
+            "ToDate": "2025-06-19T20:40:42Z"
+        },
+        {
+            "PCReqDltVoucherNo": "",
+            "OrderNo": 0,
+            "MedSerCode": "AP43790",
+            "MedSerName": "Áp lạnh điều trị u máu mi, kết mạc, hốc mắt",
+            "UOMCode": "Lần",
+            "ParaClinQty": 1,
+            "PCReqDtlNotes": null,
+            "PatientObject": 1,
+            "FromDate": "2025-06-19T20:30:42Z",
+            "ToDate": "2025-06-19T20:30:42Z"
+        }
+    ]
+}
+'::jsonb)
+*/
+CREATE OR REPLACE FUNCTION badt_dhs.insertTreatmentProcess(input_json JSONB)
+RETURNS JSONB AS $$
+DECLARE
+    TPCode TEXT; --Mã tờ điều trị: iddienbien
+    PatientCode TEXT;--Mã bệnh nhân: mabn
+    AdmissionCode TEXT;--Mã tiếp nhận: makb
+    MedicalRecordNo TEXT;--Mã bệnh án
+    TPDate TIMESTAMP; --Ngày tờ điều trị: ngaygio
+    TreatmentDoctorCode TEXT;--Mã số bs chỉ định điều trị: manv
+    DepartmentCode TEXT;--Mã khoa chỉ định điều trị:madv
+    ParaClinicalResultCommand TEXT;
+    VitalSignCommand TEXT; --Chỉ số sinh hiệu
+    RiskOfFalling INT; --Té ngã: 1-Thấp, 2-Cao, 3-Trung bình
+    TakeCare INT; --Chế độ chăm sóc: 1-Cấp 1, 2-Cấp 2, 3-Cấp 3
+    FollowUpCommand TEXT;--Chăm sóc: chamsoc
+    MethodOfTreatmentCommand TEXT;
+    NutritionCommand TEXT;
+    Infor TEXT; --Diễn biến: dienbien
+    DiseaseName TEXT;
+    IsNotChange BOOLEAN := FALSE;
+    FileDocID TEXT;
+    FilePath TEXT;
+    SignStatus INT := 0;--Trạng thái
+    Reason TEXT;--Lý do hủy
+    DiagnosisDesc TEXT; --Chẩn đoán hiện đại: kqcdoan || ',' || kqcdoanp
+    DiagnosisTraditionalDesc TEXT;--Chẩn đoán YHCT: tenyhct
+    DiagnosisOtherDesc TEXT;
+    Prescriptions JSONB; --Thông tin thuốc
+    ParaClinRequests JSONB; --Thông tin CLS
+    Diagnosis JSONB; -- Thông tin chẩn đoán
+    maicd TEXT := NULL;
+    kqcdoan TEXT := NULL;
+    maicdp TEXT := NULL;
+    kqcdoanp TEXT := NULL;
+    mayhct TEXT := NULL;
+    tenyhct TEXT := NULL;
+    record_exists BOOLEAN := FALSE;
+	insert_success BOOLEAN := TRUE;
+BEGIN
+    TPCode := input_json->>'TPCode';
+    PatientCode := input_json->>'PatientCode';
+    AdmissionCode := input_json->>'AdmissionCode';
+    MedicalRecordNo := input_json->>'MedicalRecordNo';
+    -- Kiểm tra trùng
+    SELECT EXISTS (
+        SELECT 1 FROM current.qtdieutri WHERE iddienbien = TPCode
+    ) INTO record_exists;
+
+    IF record_exists THEN
+		--RAISE NOTICE 'Trùng ID diễn biến';
+        RETURN jsonb_build_object(
+            'status', 'error',
+            'message', 'Trùng ID diễn biến'
+        );
+		insert_success := FALSE; 
+    END IF;
+
+    -- Trích xuất thông tin cơ bản
+    TPDate := (input_json->>'TPDate')::timestamp;
+    TreatmentDoctorCode := input_json->>'TreatmentDoctorCode';
+    DepartmentCode := input_json->>'DepartmentCode';
+    ParaClinicalResultCommand := input_json->>'ParaClinicalResultCommand';
+    VitalSignCommand := input_json->>'VitalSignCommand';
+    RiskOfFalling := input_json->>'RiskOfFalling';
+    TakeCare := input_json->>'TakeCare';
+    FollowUpCommand := input_json->>'FollowUpCommand';
+    MethodOfTreatmentCommand := input_json->>'PatientCode';
+    NutritionCommand := input_json->>'NutritionCommand';
+    Infor := input_json->>'Infor';
+    DiseaseName := input_json->>'DiseaseName';
+    IsNotChange := (input_json->>'IsNotChange')::BOOLEAN;
+    FileDocID := input_json->>'FileDocID';
+    FilePath := input_json->>'FilePath';
+    SignStatus := (input_json->>'SignStatus')::INT;
+    Reason := input_json->>'Reason';
+    DiagnosisDesc := input_json->>'DiagnosisDesc';
+    DiagnosisTraditionalDesc := input_json->>'DiagnosisTraditionalDesc';
+    DiagnosisOtherDesc := input_json->>'DiagnosisOtherDesc';
+
+    -- Lặp qua Diagnosis
+    FOR Diagnosis IN
+        SELECT value FROM jsonb_array_elements(input_json->'Diagnosis') AS value
+    LOOP
+        IF (Diagnosis->>'DiagnosisType')::INT = 2 THEN
+            mayhct := Diagnosis->>'DiagnosisICDCode';
+            tenyhct := Diagnosis->>'DiagnosisDesc';
+        ELSE
+            IF (Diagnosis->>'IsMain')::BOOLEAN THEN
+                maicd := Diagnosis->>'DiagnosisICDCode';
+                kqcdoan := Diagnosis->>'DiagnosisDesc';
+            ELSE
+                maicdp := Diagnosis->>'DiagnosisICDCode';
+                kqcdoanp := Diagnosis->>'DiagnosisDesc';
+            END IF;
+        END IF;
+    END LOOP;
+    
+	-- Kiểm tra cột qtdieutri.api
+	IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name = 'qtdieutri' AND column_name = 'api'
+    ) THEN
+		insert_success := FALSE; 
+         RETURN jsonb_build_object(
+            'status', 'error',
+            'message', 'Bảng qtdieutri **chưa có cột api**.'
+        );
+    END IF;    
+    -- Kiểm tra cột chungtu.api
+	IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name = 'chungtu' AND column_name = 'api'
+    ) THEN
+		insert_success := FALSE; 
+        RETURN jsonb_build_object(
+            'status', 'error',
+            'message', 'Bảng qtdieutri **chưa có cột api**.'
+        );
+    END IF;  
+    	-- Kiểm tra cột chidinhcls.api
+	IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name = 'chidinhcls' AND column_name = 'api'
+    ) THEN
+		insert_success := FALSE; 
+         RETURN jsonb_build_object(
+            'status', 'error',
+            'message', 'Bảng chidinhcls **chưa có cột api**.'
+        );
+    END IF;  
+    -- Thực hiện insert
+    BEGIN
+        INSERT INTO current.qtdieutri(mabn, makb, maba, manv, ngaygio,
+                                      dienbien, maicd, kqcdoan, maicdp, kqcdoanp,
+                                      madv, iddienbien, mayhct, tenyhct, chamsoc,api)
+        VALUES (PatientCode, AdmissionCode, MedicalRecordNo, TreatmentDoctorCode, TPDate,
+                Infor, maicd, kqcdoan, maicdp, kqcdoanp,
+                DepartmentCode, TPCode, mayhct, tenyhct, FollowUpCommand,1);
+
+        -- Nếu có Prescriptions -> gọi hàm thêm thuốc
+        IF jsonb_array_length(COALESCE(input_json->'Prescriptions', '[]'::jsonb)) > 0 AND insert_success THEN
+				PERFORM badt_dhs.inserttpprescription(input_json);
+        END IF;
+
+        -- Nếu có ParaClinRequests -> gọi hàm thêm cls
+        IF jsonb_array_length(COALESCE(input_json->'ParaClinRequests', '[]'::jsonb)) > 0 AND insert_success THEN
+				PERFORM badt_dhs.insertcutpparaclinrequest(input_json);
+        END IF;
+		
+        RETURN jsonb_build_object(
+            'status', 'success',
+            'message', ''
+        );
+    EXCEPTION
+    WHEN OTHERS THEN
+        RETURN jsonb_build_object(
+            'status', 'error',
+            'message', PG_EXCEPTION_CONTEXT
+        );
+    END;
+END;
+$$ LANGUAGE plpgsql;

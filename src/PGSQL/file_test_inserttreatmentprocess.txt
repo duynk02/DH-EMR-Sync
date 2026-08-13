@@ -1,0 +1,49 @@
+SELECT * FROM badt_dhs.inserttreatmentprocess('
+{
+    "TPCode": "Z12.20250619.1129V4",
+    "PatientCode": "2023031755",
+    "AdmissionCode": "2505011166",
+    "MedicalRecordNo": "017517",
+    "TPDate": "2025-06-19",
+    "TreatmentDoctorCode": "732",
+    "DepartmentCode": "06",
+    "ParaClinicalResultCommand": "",
+    "VitalSignCommand": "",
+    "RiskOfFalling": 0,
+    "TakeCare": 0,
+    "FollowUpCommand": "thêm cls\r\nCSC III",
+    "MethodOfTreatmentCommand": "",
+    "NutritionCommand": "",
+    "Infor": "Bệnh tỉnh táo, Tiếp xúc tốt, Da niêm hồng. Bụng mềm \r\n",
+    "DiseaseName": "",
+    "IsNotChange": false,
+    "FileDocID": "",
+    "FilePath": "",
+    "SignStatus": 0,
+    "Reason": "",
+    "DiagnosisDesc": "Viêm phúc mạc,Viêm phúc mạc do thủng túi thừa chổ nối sigma - trực tràng;Bệnh đái tháo đường không phụ thuộc insuline;Các thiếu máu khác;Suy gan, không đặc hiệu;Suy thận không xác định;Rối loạn cân bằng nước, điện giải và thăng bằng kiềm toan;Đau bụng không xác định và đau bụng khác;Rối loạn đông máu không đặc hiệu;Suy mòn;Bệnh tim thiếu máu cục bộ mạn",
+    "DiagnosisTraditionalDesc": "",
+    "DiagnosisOtherDesc": "",
+    "Diagnosis": [
+        {
+            "OrderNum": 1,
+            "DiagnosisICDCode": "K65",
+            "DiagnosisDesc": "Viêm phúc mạc",
+            "DiagnosisType": 1,
+            "IsMain": true
+        },
+        {
+            "OrderNum": 2,
+            "DiagnosisICDCode": "I10;E11;D64;K72.9;N19;E87;R10.4;D68.9;R64;I25",
+            "DiagnosisDesc": "Viêm phúc mạc do thủng túi thừa chổ nối sigma - trực tràng;Bệnh đái tháo đường không phụ thuộc insuline;Các thiếu máu khác;Suy gan, không đặc hiệu;Suy thận không xác định;Rối loạn cân bằng nước, điện giải và thăng bằng kiềm toan;Đau bụng không xác định và đau bụng khác;Rối loạn đông máu không đặc hiệu;Suy mòn;Bệnh tim thiếu máu cục bộ mạn",
+            "DiagnosisType": 1,
+            "IsMain": false
+        }
+    ],
+    "EmployeeCode": "732",
+    "PresCode": "",
+    "Prescriptions": [],
+    "ParaClinReqCode": "",
+    "ParaClinRequests": []
+}
+'::jsonb)
